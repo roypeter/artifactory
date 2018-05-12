@@ -1,6 +1,6 @@
 variable "project_name" {
   description = "this name will be used to name resources"
-  default = "gitlab-docker-runner"
+  default = "artifactory"
 }
 
 variable "aws_ec2_instance_type" {
@@ -14,12 +14,12 @@ variable "aws_ec2_subnet_tag_name" {
 }
 
 variable "boot_disk_size" {
-  description = "gitlab boot disk size in GB"
+  description = "boot disk size in GB"
   default = 20
 }
 
 variable "boot_disk_type" {
-  description = "gitlab boot disk type in GB"
+  description = "boot disk type in GB"
   default = "standard"
 }
 

@@ -96,7 +96,7 @@ resource "aws_instance" "ec2" {
   }
 }
 
-resource "aws_route53_record" "gitlab" {
+resource "aws_route53_record" "record" {
   zone_id = "${data.aws_route53_zone.selected.zone_id}"
   name    = "${var.artifactory_domain_name}"
   type    = "A"
